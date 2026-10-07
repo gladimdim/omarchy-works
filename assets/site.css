@@ -92,7 +92,13 @@ kbd {
   font: 700 18px/1 var(--display); color: var(--text); letter-spacing: -0.01em;
 }
 .brand:hover { text-decoration: none; }
-.brand .dim { color: var(--muted); font-weight: 500; }
+.brand { gap: 0; white-space: nowrap; }
+.brand .mark { margin-right: 10px; }
+.brand .dim { color: var(--muted); font-weight: 500; margin: 0 .3em; }
+.brand .handle { color: var(--accent); }
+.brand:hover .handle { text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 419px) { .nav .btn.small { display: none; } }
+@media (max-width: 339px) { .brand { font-size: 16px; } }
 .nav-links { display: flex; gap: 4px; margin-left: auto; }
 .nav-links a {
   display: inline-flex; align-items: center; min-height: 44px; padding: 0 12px; border-radius: 999px;
