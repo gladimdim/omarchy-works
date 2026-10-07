@@ -188,11 +188,20 @@ kbd {
   background: var(--accent-2);
 }
 .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+.shot.light-bg { background: #fff; }
+.soon {
+  display: inline-flex; align-items: center; gap: 10px; margin: 4px 0 0; padding: 10px 16px; border-radius: 999px;
+  border: 1px dashed var(--border-strong); color: var(--muted); font: 600 14px/1.3 var(--sans);
+}
+.soon::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
 @media (max-width: 899px) {
   .feature, .feature.flip { grid-template-columns: minmax(0, 1fr); gap: 28px; padding: 32px 0 40px; }
   .feature.flip .feature-media { order: 0; }
   .shot.inset, .feature.flip .shot.inset { right: 10px; left: auto; width: 40%; }
   .watch-media { min-height: 0; padding: 10px 0; }
+  /* The device strip already shows this Instinct; the inset would hide the others. */
+  #garmin .shot.inset { display: none; }
+  #garmin .feature-media { padding-bottom: 0; }
 }
 @media (max-width: 479px) {
   .links .btn { flex: 1 1 calc(50% - 10px); padding: 0 12px; }

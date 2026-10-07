@@ -1,8 +1,8 @@
 # Omarchy Works
 
-The website for my open-source work for [Omarchy](https://omarchy.org) Linux:
-SUPER DESKTOP, Omakey, the Omarchy AI Watch face, Omarchy plugins and the
-Loca Deserta themes.
+The website for my work for [Omarchy](https://omarchy.org) Linux: SUPER
+DESKTOP, Omakey, the Omarchy AI Watch face, the Omarchy face for Garmin,
+Omarchy plugins and the Loca Deserta themes.
 
 Live at **https://omarchy.dmytrogladkyi.com**.
 
