@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    .bg { fill: #10100f } .outer { stroke: #dbb471 } .inner { fill: #72bac5 }
+    @media (prefers-color-scheme: light) { .bg { fill: #ebe8e1 } .outer { stroke: #1a6fa3 } .inner { fill: #9a6b12 } }
+  </style>
+  <rect class="bg" width="64" height="64" rx="14"/>
+  <rect class="outer" x="12" y="12" width="40" height="40" rx="7" fill="none" stroke-width="7"/>
+  <rect class="inner" x="25" y="25" width="14" height="14" rx="3"/>
+</svg>

@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Omarchy Works — Dmytro Gladkyi</title>
+<meta name="description" content="Open-source apps, plugins, a phone keyboard, a Wear OS watch face and themes for Omarchy Linux, by Dmytro Gladkyi: SUPER DESKTOP, Omakey, Omarchy AI Watch and more.">
+<meta name="author" content="Dmytro Gladkyi">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#10100f" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ebe8e1" media="(prefers-color-scheme: light)">
+<link rel="canonical" href="https://omarchy.dmytrogladkyi.com/">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Omarchy Works">
+<meta property="og:url" content="https://omarchy.dmytrogladkyi.com/">
+<meta property="og:title" content="Omarchy Works — tools I build for Omarchy Linux">
+<meta property="og:description" content="SUPER DESKTOP, Omakey, a Wear OS AI usage watch face, Omarchy plugins and themes. All open source, by Dmytro Gladkyi.">
+<meta property="og:image" content="https://omarchy.dmytrogladkyi.com/assets/social-card.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Omarchy Works by Dmytro Gladkyi: SUPER DESKTOP, Omakey, Omarchy AI Watch, plugins and themes, shown as screenshots beside an armoured knight.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Omarchy Works — tools I build for Omarchy Linux">
+<meta name="twitter:description" content="SUPER DESKTOP, Omakey, a Wear OS AI usage watch face, Omarchy plugins and themes. All open source, by Dmytro Gladkyi.">
+<meta name="twitter:image" content="https://omarchy.dmytrogladkyi.com/assets/social-card.jpg">
+<meta name="twitter:image:alt" content="Omarchy Works by Dmytro Gladkyi: SUPER DESKTOP, Omakey, Omarchy AI Watch, plugins and themes, shown as screenshots beside an armoured knight.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#apps">Skip to the projects</a>
+
+<header class="nav">
+  <div class="wrap nav-row">
+    <a class="brand" href="#top" aria-label="Omarchy Works, back to top"><span class="mark" aria-hidden="true"></span>omarchy<span class="dim">.works</span></a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#apps">Apps</a>
+      <a href="#plugins">Plugins</a>
+      <a href="#themes">Themes</a>
+      <a href="#contributions">Contributions</a>
+    </nav>
+    <a class="btn small" href="https://github.com/gladimdim">GitHub</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <picture class="hero-art" aria-hidden="true">
+      <source srcset="assets/img/hero-dark.webp" media="(prefers-color-scheme: dark)">
+      <img src="assets/img/hero-light.webp" alt="" width="1920" height="1047" fetchpriority="high">
+    </picture>
+    <div class="wrap hero-copy">
+      <p class="eyebrow">Open source · Omarchy Linux</p>
+      <h1>Tools I build<br>for <span class="hl">Omarchy</span>.</h1>
+      <p class="lede">An overlay for your AI agents, a phone that works as a real keyboard, your AI quotas on a watch face, and plugins and themes for the desktop. Everything here is free and open source.</p>
+      <ul class="platforms" aria-label="Platforms">
+        <li>Linux</li><li>Android</li><li>Wear OS</li><li>Web</li>
+      </ul>
+      <p class="byline">by <a href="https://github.com/gladimdim">Dmytro Gladkyi</a></p>
+    </div>
+  </section>
+
+  <!-- ── Apps ─────────────────────────────────────────────── -->
+  <section id="apps" class="section">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow">Apps</p>
+        <h2>The big three.</h2>
+      </header>
+
+      <article class="feature reveal" id="super-desktop">
+        <div class="feature-media">
+          <video class="shot" src="assets/media/super-desktop-reveal.mp4" poster="assets/img/super-desktop-reveal-poster.webp" muted loop playsinline preload="none" width="1280" height="720" aria-label="SUPER DESKTOP sliding in over the desktop with live Claude Code and Codex terminals"></video>
+          <img class="shot inset" src="assets/img/super-desktop-phone.webp" alt="The SUPER DESKTOP Android app on a foldable phone, listing the PC's agent sessions" width="1280" height="720" loading="lazy">
+        </div>
+        <div class="feature-copy">
+          <p class="tag">Linux overlay · Android companion · GPL-3.0</p>
+          <h3>SUPER DESKTOP</h3>
+          <p class="tagline">Every AI agent. One shortcut away.</p>
+          <ul class="points">
+            <li>Press <kbd>SUPER</kbd> <kbd>SHIFT</kbd> <kbd>Q</kbd> and your coding agents slide in as live terminal cards with sticky notes. Press it again and they hide but keep running.</li>
+            <li>Claude Code, Codex, OpenCode, Grok and more, each in its own card. A Files button previews images, PDFs and Markdown the agent mentions.</li>
+            <li>Follows your Omarchy theme. Open another PC's agents from yours, or all of them from your phone, over your own network. No accounts.</li>
+            <li>A command line and an MCP server let agents drive it too.</li>
+          </ul>
+          <div class="cmd"><code>curl -fsSL https://raw.githubusercontent.com/gladimdim/super-desktop/master/install.sh | bash</code><button type="button" class="copy">Copy</button></div>
+          <div class="links">
+            <a class="btn primary" href="https://superdesktop.dmytrogladkyi.com/">Website</a>
+            <a class="btn" href="https://github.com/gladimdim/super-desktop">GitHub</a>
+            <a class="btn" href="https://superdesktop.dmytrogladkyi.com/connect.html">Connect a phone</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature flip reveal" id="omakey">
+        <div class="feature-media">
+          <img class="shot" src="assets/img/layout-studio.webp" alt="Omakey Layout Studio editing a classic QWERTY phone keyboard layout in the browser" width="1280" height="800" loading="lazy">
+          <img class="shot inset" src="assets/img/omakey.webp" alt="The Omakey keyboard on a phone held sideways" width="660" height="560" loading="lazy">
+        </div>
+        <div class="feature-copy">
+          <p class="tag">Omarchy plugin · Android app · Web editor · MIT</p>
+          <h3>Omakey</h3>
+          <p class="tagline">Your phone is the keyboard. A real one.</p>
+          <ul class="points">
+            <li>A kernel-level virtual keyboard and touchpad, so Hyprland shortcuts, games and even the lock screen work from your phone.</li>
+            <li>About one encrypted packet per key over Wi-Fi, paired with a QR code. Falls back to Bluetooth, and works as a plain Bluetooth keyboard for any computer.</li>
+            <li>Design your own layouts in Layout Studio: presets like Colemak and Corne, layers, and sharing by link or QR code.</li>
+          </ul>
+          <div class="cmd"><code>omarchy plugin add https://github.com/gladimdim/omakey-omarchy-plugin --enable</code><button type="button" class="copy">Copy</button></div>
+          <div class="links">
+            <a class="btn primary" href="https://gladimdim.github.io/omakey-omarchy-plugin/">Website</a>
+            <a class="btn" href="https://github.com/gladimdim/omakey-mobile/releases/latest">Android APK</a>
+            <a class="btn" href="https://gladimdim.github.io/omakey-layout-studio/">Layout Studio</a>
+            <a class="btn" href="https://github.com/gladimdim/omakey-omarchy-plugin">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature reveal" id="ai-watch">
+        <div class="feature-media watch-media">
+          <img class="watch" src="assets/img/watchface.webp" alt="Round Wear OS watch face with four arcs for Claude and Grok quotas around a pixel clock" width="480" height="480" loading="lazy">
+          <img class="shot panel-shot" src="assets/img/watch-widget.webp" alt="The Omarchy AI Watch panel with four gauge slots and discovered limits" width="691" height="826" loading="lazy">
+        </div>
+        <div class="feature-copy">
+          <p class="tag">Wear OS watch face · Omarchy widget · MIT</p>
+          <h3>Omarchy AI Watch</h3>
+          <p class="tagline">Your AI quotas, on your wrist.</p>
+          <ul class="points">
+            <li>Four arcs on the watch face show the quotas you pick: Claude, Grok, Antigravity and more.</li>
+            <li>An Omarchy bar widget serves them from your laptop. The watch finds it on your network, and you approve each watch on the laptop.</li>
+          </ul>
+          <div class="cmd"><code>omarchy plugin add https://github.com/gladimdim/omarchy-ai-companion.git --enable</code><button type="button" class="copy">Copy</button></div>
+          <div class="links">
+            <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.gladimdim.omarchy.ai.watch.watchface">Watch face on Google Play</a>
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.gladimdim.omarchy.ai.watch">Wear OS app</a>
+            <a class="btn" href="https://gladimdim.github.io/omarchy-ai-companion/">Website</a>
+            <a class="btn" href="https://github.com/gladimdim/omarchy-ai-companion">GitHub</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ── Omarchy plugins ──────────────────────────────────── -->
+  <section id="plugins" class="section">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow">Omarchy plugins</p>
+        <h2>Small things for the bar.</h2>
+        <p class="sub">Install any of them with one command. They live in your Omarchy bar and follow your theme.</p>
+      </header>
+      <div class="grid">
+        <article class="card wide reveal">
+          <div class="card-shot"><img src="assets/img/config-sync.webp" alt="Config Sync panel listing synced areas: shortcuts, theme, plugins, displays, Hyprland configs" width="563" height="617" loading="lazy"></div>
+          <div class="card-body">
+            <h3><a href="https://github.com/gladimdim/omarchy-config-sync-plugin">Config Sync</a></h3>
+            <p class="tag">Most starred</p>
+            <p>Sync your configs, shortcuts, themes and plugins between machines through your own private git repo. See every change before you apply it, with a timestamped backup each time. Publish pushes this machine's changes, and drift shows up so you can pick what to keep.</p>
+            <div class="cmd"><code>omarchy plugin add https://github.com/gladimdim/omarchy-config-sync-plugin --enable --yes</code><button type="button" class="copy">Copy</button></div>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-shot"><img src="assets/img/ai-usage-bar.webp" alt="AI Limits and Quotas popup with ASCII progress bars for Grok and Claude Code" width="720" height="902" loading="lazy"></div>
+          <div class="card-body">
+            <h3><a href="https://github.com/gladimdim/omarchy-ai-usage-bar">AI Usage Bar</a></h3>
+            <p>Old-school ASCII progress bars in the dock for Claude Code, Codex, Grok, Antigravity and other limits. Six bar styles, and a banner when a limit runs out or resets.</p>
+            <div class="cmd"><code>omarchy plugin install https://github.com/gladimdim/omarchy-ai-usage-bar.git --enable</code><button type="button" class="copy">Copy</button></div>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-shot"><img src="assets/img/hardware-info.webp" alt="Hardware Details panel on the Memory tab with RAM, swap and memory modules" width="620" height="665" loading="lazy"></div>
+          <div class="card-body">
+            <h3><a href="https://github.com/gladimdim/omarchy-hardware-info-plugin">Hardware Info</a></h3>
+            <p>CPU temperature, fan speed, RAM and disk in the tray, and a six-tab inspector for everything else. Copy a full JSON report with one key.</p>
+            <div class="cmd"><code>omarchy plugin add https://github.com/gladimdim/omarchy-hardware-info-plugin --enable</code><button type="button" class="copy">Copy</button></div>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-shot"><img src="assets/img/air-raid.webp" alt="Air raid alert panel in Ukrainian showing an active alert in Kyiv and a list of oblasts" width="471" height="620" loading="lazy"></div>
+          <div class="card-body">
+            <h3><a href="https://github.com/gladimdim/omarchy-air-raid-alert-ukraine-plugin">Air Raid Alert · Ukraine</a></h3>
+            <p>A live air-raid alarm for your oblast: the trident in the bar turns green or blinks red, with a notification and a siren. No account or token needed.</p>
+            <div class="cmd"><code>omarchy plugin install https://github.com/gladimdim/omarchy-air-raid-alert-ukraine-plugin.git --enable</code><button type="button" class="copy">Copy</button></div>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-shot contain"><img src="assets/img/today-reminders.webp" alt="Today Reminders dialog asking when to notify, above the Omarchy bar" width="1124" height="320" loading="lazy"></div>
+          <div class="card-body">
+            <h3><a href="https://github.com/gladimdim/omarchy-today-reminders">Today Reminders</a></h3>
+            <p>Click the bell in the bar, type a time later today and a message, and get a notification with a chime. Reminders never spill into tomorrow.</p>
+            <div class="cmd"><code>omarchy plugin add https://github.com/gladimdim/omarchy-today-reminders.git --enable --yes</code><button type="button" class="copy">Copy</button></div>
+          </div>
+        </article>
+      </div>
+
+      <header class="section-head minor">
+        <p class="eyebrow">SUPER DESKTOP plugins</p>
+        <h2>Bend the overlay.</h2>
+      </header>
+      <div class="grid compact">
+        <article class="card text reveal">
+          <div class="card-body">
+            <p class="glyph" aria-hidden="true">◎</p>
+            <h3><a href="https://github.com/gladimdim/super-desktop-gravity-wm">Gravity WM</a></h3>
+            <p>Cards grow as they near the centre of the screen and turn into icons at the edges. They are really resized, not zoomed. Toggle with <kbd>SUPER</kbd> <kbd>ALT</kbd> <kbd>M</kbd>.</p>
+          </div>
+        </article>
+        <article class="card text reveal">
+          <div class="card-body">
+            <p class="glyph" aria-hidden="true">⇡</p>
+            <h3><a href="https://github.com/gladimdim/super-desktop-flusher">Flusher</a></h3>
+            <p>Lists your git repositories with uncommitted changes. Press Flush and an agent of your choice commits them with real messages and pushes.</p>
+          </div>
+        </article>
+        <article class="card text reveal">
+          <div class="card-body">
+            <p class="glyph" aria-hidden="true">＋</p>
+            <h3><a href="https://github.com/gladimdim/super-desktop-plugins">Plugin registry</a></h3>
+            <p>The list SUPER DESKTOP installs plugins from. Built one? Add it with a pull request.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Themes ───────────────────────────────────────────── -->
+  <section id="themes" class="section">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow">Themes</p>
+        <h2>Loca Deserta, day and night.</h2>
+        <p class="sub">Two Omarchy themes from the far-future Loca Deserta universe. This site wears them: switch your system between dark and light mode and watch.</p>
+      </header>
+      <div class="themes">
+        <article class="theme reveal">
+          <img src="assets/img/theme-dark.webp" alt="Loca Deserta Dark: Neovim, btop, a terminal and Files in carbon black and brass" width="1280" height="720" loading="lazy">
+          <div class="card-body">
+            <h3><a href="https://github.com/gladimdim/omarchy-loca-deserta-dark-theme">Loca Deserta Dark</a></h3>
+            <p>Carbon void, battle-plate steel and starlight. Eight wallpapers from the Hetmanate's frontier.</p>
+            <div class="cmd"><code>omarchy theme install https://github.com/gladimdim/omarchy-loca-deserta-dark-theme.git</code><button type="button" class="copy">Copy</button></div>
+          </div>
+        </article>
+        <article class="theme reveal">
+          <img src="assets/img/theme-light.webp" alt="Loca Deserta Light: the same apps on hull-white paper with plasma-blue accents" width="1280" height="720" loading="lazy">
+          <div class="card-body">
+            <h3><a href="https://github.com/gladimdim/omarchy-loca-deserta-light-theme">Loca Deserta Light</a></h3>
+            <p>Hull-white paper, void-charcoal text and plasma blue. Six ink drawings of the DARYA-class warp carrier.</p>
+            <div class="cmd"><code>omarchy theme install https://github.com/gladimdim/omarchy-loca-deserta-light-theme.git</code><button type="button" class="copy">Copy</button></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contributions ────────────────────────────────────── -->
+  <section id="contributions" class="section">
+    <div class="wrap">
+      <header class="section-head">
+        <p class="eyebrow">Contributions</p>
+        <h2>Fixes upstream.</h2>
+      </header>
+      <article class="contrib reveal">
+        <div>
+          <h3><a href="https://github.com/thisisgm/flea">flea</a> <span class="by">by thisisgm</span></h3>
+          <p>The fastest GUI file manager on Linux, keyboard-first and built for Omarchy. My merged fix makes Vulkan present on the GPU that owns the display, so flea no longer opens as a blank window on hybrid Intel + NVIDIA laptops.</p>
+        </div>
+        <a class="btn" href="https://github.com/thisisgm/flea/pull/119">PR #119 · merged</a>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-row">
+    <p><span class="mark" aria-hidden="true"></span><strong>Dmytro Gladkyi</strong></p>
+    <nav aria-label="Elsewhere">
+      <a href="https://github.com/gladimdim">GitHub</a>
+      <a href="https://superdesktop.dmytrogladkyi.com/">SUPER DESKTOP</a>
+      <a href="https://github.com/gladimdim/omarchy-works">Site source</a>
+    </nav>
+    <p class="fine">A personal portfolio. Not affiliated with the Omarchy project; Omarchy belongs to its creators.</p>
+  </div>
+</footer>
+</body>
+</html>
