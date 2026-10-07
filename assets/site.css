@@ -58,6 +58,8 @@ body {
   margin: 0; background: var(--bg); color: var(--body);
   font: 17px/1.6 var(--sans); -webkit-font-smoothing: antialiased; overflow-x: hidden;
 }
+/* clip, unlike hidden, also stops phones panning sideways and keeps the nav sticky. */
+@supports (overflow: clip) { html, body { overflow-x: clip; } }
 img, video { display: block; max-width: 100%; height: auto; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { text-decoration: underline; text-underline-offset: 3px; }
