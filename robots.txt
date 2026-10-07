@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://omarchy.dmytrogladkyi.com/sitemap.xml
