@@ -60,7 +60,7 @@
     <div class="wrap hero-copy">
       <p class="eyebrow">Open source · Omarchy Linux</p>
       <h1>Tools I build<br>for <span class="hl">Omarchy</span>.</h1>
-      <p class="lede">An overlay for your AI agents, a phone that works as a real keyboard, your AI quotas on a watch face, and plugins and themes for the desktop. Everything here is free and open source.</p>
+      <p class="lede">An overlay for your AI agents, a phone that works as a real keyboard, your AI quotas on your wrist and in your dock, and more plugins and themes for the desktop. Everything here is free and open source.</p>
       <ul class="platforms" aria-label="Platforms">
         <li>Linux</li><li>Android</li><li>Wear OS</li><li>Web</li>
       </ul>
@@ -167,11 +167,13 @@
             <div class="cmd"><code>omarchy plugin add https://github.com/gladimdim/omarchy-config-sync-plugin --enable --yes</code><button type="button" class="copy">Copy</button></div>
           </div>
         </article>
-        <article class="card reveal">
-          <div class="card-shot"><img src="assets/img/ai-usage-bar.webp" alt="AI Limits and Quotas popup with ASCII progress bars for Grok and Claude Code" width="720" height="902" loading="lazy"></div>
+        <article class="card wide reveal">
+          <div class="card-shot"><img src="assets/img/ai-usage-bar.webp" alt="AI Limits and Quotas popup with ASCII progress bars for Grok and Claude Code, above the dock" width="720" height="902" loading="lazy"></div>
           <div class="card-body">
-            <h3><a href="https://github.com/gladimdim/omarchy-ai-usage-bar">AI Usage Bar</a></h3>
-            <p>Old-school ASCII progress bars in the dock for Claude Code, Codex, Grok, Antigravity and other limits. Six bar styles, and a banner when a limit runs out or resets.</p>
+            <p class="tag">AI quotas in your dock</p>
+            <h3><a href="https://github.com/gladimdim/omarchy-ai-usage-bar">Omarchy AI Usage Bar</a></h3>
+            <p>Old-school ASCII progress bars in the Omarchy dock for Claude Code, Codex, Grok, Antigravity and other providers' usage, quotas and rate limits. Pick from six bar styles and track up to twelve limits, with a popup dashboard for the rest.</p>
+            <p>An animated banner tells you when a limit runs out or resets. It makes no network requests of its own.</p>
             <div class="cmd"><code>omarchy plugin install https://github.com/gladimdim/omarchy-ai-usage-bar.git --enable</code><button type="button" class="copy">Copy</button></div>
           </div>
         </article>
@@ -191,40 +193,12 @@
             <div class="cmd"><code>omarchy plugin install https://github.com/gladimdim/omarchy-air-raid-alert-ukraine-plugin.git --enable</code><button type="button" class="copy">Copy</button></div>
           </div>
         </article>
-        <article class="card reveal">
+        <article class="card full reveal">
           <div class="card-shot contain"><img src="assets/img/today-reminders.webp" alt="Today Reminders dialog asking when to notify, above the Omarchy bar" width="1124" height="320" loading="lazy"></div>
           <div class="card-body">
             <h3><a href="https://github.com/gladimdim/omarchy-today-reminders">Today Reminders</a></h3>
             <p>Click the bell in the bar, type a time later today and a message, and get a notification with a chime. Reminders never spill into tomorrow.</p>
             <div class="cmd"><code>omarchy plugin add https://github.com/gladimdim/omarchy-today-reminders.git --enable --yes</code><button type="button" class="copy">Copy</button></div>
-          </div>
-        </article>
-      </div>
-
-      <header class="section-head minor">
-        <p class="eyebrow">SUPER DESKTOP plugins</p>
-        <h2>Bend the overlay.</h2>
-      </header>
-      <div class="grid compact">
-        <article class="card text reveal">
-          <div class="card-body">
-            <p class="glyph" aria-hidden="true">◎</p>
-            <h3><a href="https://github.com/gladimdim/super-desktop-gravity-wm">Gravity WM</a></h3>
-            <p>Cards grow as they near the centre of the screen and turn into icons at the edges. They are really resized, not zoomed. Toggle with <kbd>SUPER</kbd> <kbd>ALT</kbd> <kbd>M</kbd>.</p>
-          </div>
-        </article>
-        <article class="card text reveal">
-          <div class="card-body">
-            <p class="glyph" aria-hidden="true">⇡</p>
-            <h3><a href="https://github.com/gladimdim/super-desktop-flusher">Flusher</a></h3>
-            <p>Lists your git repositories with uncommitted changes. Press Flush and an agent of your choice commits them with real messages and pushes.</p>
-          </div>
-        </article>
-        <article class="card text reveal">
-          <div class="card-body">
-            <p class="glyph" aria-hidden="true">＋</p>
-            <h3><a href="https://github.com/gladimdim/super-desktop-plugins">Plugin registry</a></h3>
-            <p>The list SUPER DESKTOP installs plugins from. Built one? Add it with a pull request.</p>
           </div>
         </article>
       </div>

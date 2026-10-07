@@ -152,7 +152,6 @@ kbd {
 /* ── Sections ───────────────────────────────────────────── */
 .section { padding: 88px 0 0; }
 .section-head { margin-bottom: 34px; max-width: 720px; }
-.section-head.minor { margin-top: 72px; }
 .section-head h2 { font-size: clamp(32px, 4.4vw, 52px); line-height: 1.05; }
 .sub { margin: 14px 0 0; color: var(--muted); font-size: 18px; }
 @media (max-width: 719px) { .section { padding-top: 64px; } }
@@ -227,12 +226,15 @@ kbd {
 @media (min-width: 640px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (min-width: 1000px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 /* The featured plugin spans two columns, image beside its text. */
+.grid { grid-auto-flow: row dense; }
 @media (min-width: 640px) {
   .card.wide { grid-column: span 2; flex-direction: row; }
+  .card.full { grid-column: 1 / -1; flex-direction: row; }
+  .card.full .card-shot { flex: 0 0 50%; aspect-ratio: auto; border-bottom: 0; border-right: 1px solid var(--border); }
   .card.wide .card-shot { flex: 0 0 46%; aspect-ratio: auto; border-bottom: 0; border-right: 1px solid var(--border); }
   .card.wide .card-body { justify-content: center; }
+  .card.wide .card-shot img { object-position: left top; }
 }
-.grid.compact { grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); }
 .card {
   display: flex; flex-direction: column; min-width: 0; border-radius: var(--radius); overflow: hidden;
   background: var(--panel); border: 1px solid var(--border); transition: border-color .2s ease, transform .2s ease;
@@ -242,14 +244,13 @@ kbd {
 .card-shot img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
 .card-shot.contain { display: grid; place-items: center; padding: 18px; background: #0d0d0c; }
 .card-shot.contain img { height: auto; object-fit: contain; border-radius: 8px; }
-.card-body { display: flex; flex-direction: column; gap: 12px; padding: 20px; flex: 1; }
+.card-body { display: flex; flex-direction: column; gap: 12px; padding: 20px; flex: 1; min-width: 0; }
 .card-body p { margin: 0; color: var(--body); font-size: 16px; }
 .card-body .cmd { margin-top: auto; }
 .card h3 { font-size: 22px; line-height: 1.2; }
 .card h3 a, .theme h3 a, .contrib h3 a { color: var(--text); display: inline-flex; align-items: center; min-height: 44px; }
 .card h3, .theme h3 { margin: -8px 0; }
 .card h3 a::after { content: " ↗"; color: var(--muted); font-size: 0.8em; }
-.card.text .glyph { font: 600 26px/1 var(--mono); color: var(--accent); margin: 0; }
 
 /* ── Themes ─────────────────────────────────────────────── */
 .themes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
