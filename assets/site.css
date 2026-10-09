@@ -232,6 +232,9 @@ kbd {
 }
 .cmd .copy:hover { border-color: var(--accent); }
 .cmd .copy.done { color: var(--accent); border-color: var(--accent); }
+/* A label over a command when a project has one per platform. */
+.cmd-label { margin: 0 0 6px; font: 600 12px/1.4 var(--sans); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.cmd + .cmd-label { margin-top: 12px; }
 @media (max-width: 719px) {
   .cmd { flex-wrap: wrap; }
   .cmd code { flex-basis: 100%; white-space: normal; overflow-wrap: anywhere; }

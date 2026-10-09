@@ -129,18 +129,23 @@
           <img class="shot inset" src="assets/img/omakey.webp" alt="The Omakey keyboard on a phone held sideways" width="660" height="560" loading="lazy">
         </div>
         <div class="feature-copy">
-          <p class="tag">Omarchy plugin · Android app · Web editor · MIT</p>
+          <p class="tag">Omarchy plugin · SteamOS · Android app · Web editor · MIT</p>
           <h3>Omakey</h3>
           <p class="tagline">Your phone is the keyboard. A real one.</p>
           <ul class="points">
-            <li>A kernel-level virtual keyboard and touchpad, so Hyprland shortcuts, games and even the lock screen work from your phone.</li>
-            <li>About one encrypted packet per key over Wi-Fi, paired with a QR code. Falls back to Bluetooth, and works as a plain Bluetooth keyboard for any computer.</li>
-            <li>Design your own layouts in Layout Studio: presets like Colemak and Corne, layers, and sharing by link or QR code.</li>
+            <li>Turns an Android phone into a physical keyboard and touchpad for Omarchy and the Steam Deck: a kernel-level device, so Hyprland shortcuts, games and even the lock screen work, in Game Mode too.</li>
+            <li>Layouts of real keyboards: laptop QWERTY, Colemak and Dvorak, and split boards like the Corne, Lily58, ErgoDox and Kinesis Advantage, each half under a thumb. Or design your own in Layout Studio.</li>
+            <li>About one encrypted packet per key over Wi-Fi, paired with a QR code. Falls back to Bluetooth, and works as a plain Bluetooth keyboard for any computer. Portrait mode types with your own Android keyboard.</li>
+            <li>Listed and verified on the <a href="https://omarchyplugins.com/plugin.html?id=gladimdim.omakey">Omarchy plugin marketplace</a>. The bar widget pairs phones and shows a QR code for the app.</li>
           </ul>
-          <div class="cmd"><code>omarchy plugin add https://github.com/gladimdim/omakey-omarchy-plugin --enable</code><button type="button" class="copy">Copy</button></div>
+          <p class="cmd-label">Omarchy</p>
+          <div class="cmd"><code>omarchy plugin add https://github.com/gladimdim/omakey-omarchy-plugin --enable &amp;&amp; ~/.config/omarchy/plugins/gladimdim.omakey/install.sh</code><button type="button" class="copy">Copy</button></div>
+          <p class="cmd-label">Steam Deck, in Desktop Mode</p>
+          <div class="cmd"><code>curl -fsSL https://raw.githubusercontent.com/gladimdim/omakey-omarchy-plugin/main/install-steamos.sh | bash</code><button type="button" class="copy">Copy</button></div>
           <div class="links">
             <a class="btn primary" href="https://gladimdim.github.io/omakey-omarchy-plugin/">Website</a>
             <a class="btn" href="https://github.com/gladimdim/omakey-mobile/releases/latest">Android APK</a>
+            <a class="btn" href="https://omarchyplugins.com/plugin.html?id=gladimdim.omakey">Marketplace</a>
             <a class="btn" href="https://gladimdim.github.io/omakey-layout-studio/">Layout Studio</a>
             <a class="btn" href="https://github.com/gladimdim/omakey-omarchy-plugin">GitHub</a>
           </div>
