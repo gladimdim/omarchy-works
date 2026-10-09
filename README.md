@@ -2,7 +2,7 @@
 
 The website for my work for [Omarchy](https://omarchy.org) Linux: SUPER
 DESKTOP, Omakey, the Omarchy AI Watch face, the Omarchy face for Garmin,
-Omarchy plugins and the Loca Deserta themes.
+Omarchy plugins, OmaDeck for the Steam Deck and the Loca Deserta themes.
 
 Live at **https://omarchy.dmytrogladkyi.com**.
 
